@@ -8,9 +8,9 @@
 
  var ttsUrl2 = "&hl=en-gb";
 
- var audio1 = '<audio controls="controls" preload="auto"><source src="';
+ var audio1 = '<audio autoplay="autoplay"><source src="';
 
- var audio2 = ' ></audio>';
+ var audio2 = ' "></audio>';
 
 
 /*
@@ -26,12 +26,13 @@ $(".btnVerb").click(function(e) {
   keywords = $this.data("tts-value");
   ttsUrl = ttsUrl + keywords + ttsUrl2;
 
-  console.log(ttsUrl);
-
   var audio = audio1 + ttsUrl + audio2;
 
   $('body').append(audio);
   console.log(audio);
+
+   ttsUrl = "http://api.voicerss.org/?key=8aeeba23cecf4c36a423044b3e6237f6&src=";
+
 
   e.preventDefault();
 });
