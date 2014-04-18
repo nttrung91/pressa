@@ -1,0 +1,54 @@
+.main{
+  clear:both;
+  margin-top: 90px;
+}
+
+/* @Module: Verb */
+
+.module--verb{
+  padding: 0 $babyGutter;
+  height: 165px;
+  max-height: 250px;
+  overflow: auto;
+}
+
+.verb{
+  display: inline-block;
+  width: 48%;
+  vertical-align: top;
+  margin-bottom: 2px;
+}
+
+.btnVerb{
+  padding: 23px 0;
+  width: 100%;
+  font-size: 20px;
+  border-radius: 3px;
+}
+
+
+/* @Module: Verb */
+
+.module--noun{
+  padding: 0 $babyGutter;
+  height: 240px;
+  max-height: 240px;
+  overflow: auto;
+  margin-top: 20px;
+}
+
+.noun{
+  display: inline-block;
+  width: 48%;
+  vertical-align: top;
+  margin-bottom: 2px;
+}
+
+.btnNoun{
+  padding: 40px 0;
+  width: 100%;
+  font-size: 20px;
+  border-radius: 3px;
+}
+
+
