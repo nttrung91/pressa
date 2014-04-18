@@ -2196,8 +2196,11 @@ table pre {
 .module--verb {
   padding: 0 20px;
   height: 165px;
-  max-height: 250px;
   overflow: auto;
+}
+
+.verbs {
+  width: 100%;
 }
 
 .verb {
@@ -2219,7 +2222,6 @@ table pre {
 .module--noun {
   padding: 0 20px;
   height: 240px;
-  max-height: 240px;
   overflow: auto;
   margin-top: 20px;
 }
