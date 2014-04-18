@@ -1,68 +1,38 @@
-/**************************
- * Responsive Trigger Menu
- **************************/
+/*
+ * Play the sound
+ */
 
-var $menu = $(".nav--primary"),
-    $menuLink = $(".menu-link");
+ var ttsUrl = "http://api.voicerss.org/?key=8aeeba23cecf4c36a423044b3e6237f6&src=";
 
-// Check to see if Javascript is available
-$('.site-wrap').addClass('js');
+ var keywords = "";
 
-$menuLink.click(function() {
-  $menuLink.toggleClass('active');
-  $menu.toggleClass('active');
-  return false;
+ var ttsUrl2 = "&hl=en-gb";
+
+ var audio1 = '<audio controls="controls" preload="auto"><source src="';
+
+ var audio2 = ' ></audio>';
+
+
+/*
+<audio id="beep-one" controls="controls" preload="auto">
+        <source src="audio/beep.mp3">
+        <source src="audio/beep.ogg">
+        Your browser isn't invited for super fun time.
+      </audio>
+*/
+
+$(".btnVerb").click(function(e) {
+  var $this = $(this);
+  keywords = $this.data("tts-value");
+  ttsUrl = ttsUrl + keywords + ttsUrl2;
+
+  console.log(ttsUrl);
+
+  var audio = audio1 + ttsUrl + audio2;
+
+  $('body').append(audio);
+  console.log(audio);
+
+  e.preventDefault();
 });
 
-
-/**************************
- * Responsive Trigger SubMenu
- **************************/
-
- var $categoryLink = $("#triggerCategory"),
-     $subMenu = $(".subMenu");
-
- $categoryLink.click(function() {
-   $categoryLink.toggleClass('active');
-   $subMenu.toggleClass('active');
-   return false;
- });
-
-
-/**************************
- *        Slider
- **************************/
-$(document).ready(function() {
-
-  // Add additionally classes for the purposes of designing
-  $(".slidesjs-navigation").wrapAll("<div class='slidesjs-navigationWrap'></div>");
-  $(".slidesjs-previous").empty().addClass("fontawesome-chevron-left");
-  $(".slidesjs-next").empty().addClass("fontawesome-chevron-right");
-
-});
-
-// Controlling the Slider
-$("#slides").slidesjs({
-  width: 940,
-  height: 600,
-  effect: {
-    slide: {
-      speed: 200
-    }
-  },
-  play: {
-      interval: 5000,
-        // [number] Time spent on each slide in milliseconds.
-      auto: true,
-        // [boolean] Start playing the slideshow on load.
-      pauseOnHover: false,
-        // [boolean] pause a playing slideshow on hover
-      restartDelay: 2500
-        // [number] restart delay on inactive slideshow
-    },
-  pagination: {
-        active: false,
-          // [boolean] Create pagination items.
-          // You cannot use your own pagination. Sorry.
-      }
-});
