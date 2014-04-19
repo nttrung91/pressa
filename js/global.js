@@ -1,16 +1,13 @@
 /*
- * Play the sound
+ * TTS (Text to Speed)
  */
 
- var ttsUrl = "http://api.voicerss.org/?key=8aeeba23cecf4c36a423044b3e6237f6&src=";
+ var srcHead = "http://api.voicerss.org/?key=8aeeba23cecf4c36a423044b3e6237f6&src=",
+     srcTail = "&hl=en-gb",
 
- var keywords = "";
+     sourceHead = '<source src="',
 
- var ttsUrl2 = "&hl=en-gb";
-
- var audio1 = '<audio class="sound" autoplay controls><source src="';
-
- var audio2 = ' "></audio>';
+     sourceTail = ' ">';
 
 
 /*
@@ -22,18 +19,26 @@
 */
 
 $(".btnVerb").click(function(e) {
-  var $this = $(this);
+
+  var $this = $(this),
+      $sound = $("#sound"),
+      src = "",
+      keywords = "",
+      audio = "";
+
+  // Clear all previous sounds
+  $sound.empty();
+
+  // Store the word
   keywords = $this.data("tts-value");
-  ttsUrl = ttsUrl + keywords + ttsUrl2;
 
-  var audio = audio1 + ttsUrl + audio2;
 
-  $('.app').append(audio);
-  // $('.sound').play();
-  console.log(audio);
+  src = srcHead + keywords + srcTail;
 
-   ttsUrl = "http://api.voicerss.org/?key=8aeeba23cecf4c36a423044b3e6237f6&src=";
+  audio = sourceHead + src + sourceTail;
 
+  $sound.append(audio);
+  $('#sound')[0].play();
 
   e.preventDefault();
 });
