@@ -100,6 +100,9 @@ $goBtn.click(function(e) {
   $sound.append(audio);
   $('#sound')[0].play();
 
+  // Clear the result box
+  $result.empty();
+
   e.preventDefault();
 });
 
