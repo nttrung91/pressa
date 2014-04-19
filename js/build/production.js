@@ -15,7 +15,15 @@
 
      sourceHead = '<source src="',
 
-     sourceTail = ' ">';
+     sourceTail = ' ">',
+
+     $goBtn = $("#goBtn"),
+
+     $verbBtn = $(".btnVerb"),
+
+     $nounBtn = $(".btnNoun"),
+
+     $result = $(".result");
 
 
 /*
@@ -26,10 +34,58 @@
       </audio>
 */
 
-$(".btnVerb").click(function(e) {
+
+
+$verbBtn.click(function(e) {
 
   var $this = $(this),
-      $sound = $("#sound"),
+      currentResult = "";
+
+
+  // Store the current text in the result
+  $currentResult = $result.text();
+
+
+  // Store the word
+  keywords = $this.data("tts-value");
+
+  $currentResult = $currentResult + keywords + " ";
+
+  $currentResult = $currentResult.replace("+"," ");
+
+  $result.text($currentResult);
+
+
+  e.preventDefault();
+});
+
+$nounBtn.click(function(e) {
+
+  var $this = $(this),
+      currentResult = "";
+
+
+  // Store the current text in the result
+  $currentResult = $result.text();
+
+
+  // Store the word
+  keywords = $this.data("tts-value");
+
+  $currentResult = $currentResult + keywords + " ";
+
+  $currentResult = $currentResult.replace("+"," ");
+
+  $result.text($currentResult);
+
+
+  e.preventDefault();
+});
+
+
+/* Go Button */
+$goBtn.click(function(e) {
+  var $sound = $("#sound"),
       src = "",
       keywords = "",
       audio = "";
@@ -37,11 +93,7 @@ $(".btnVerb").click(function(e) {
   // Clear all previous sounds
   $sound.empty();
 
-  // Store the word
-  keywords = $this.data("tts-value");
-
-
-  src = srcHead + keywords + srcTail;
+  src = srcHead + $result.text() + srcTail;
 
   audio = sourceHead + src + sourceTail;
 
@@ -50,4 +102,5 @@ $(".btnVerb").click(function(e) {
 
   e.preventDefault();
 });
+
 
