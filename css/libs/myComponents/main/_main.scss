@@ -41,8 +41,8 @@
   display: inline-block;
   vertical-align: top;
   width: 50%;
-  margin-left: -4px !important;
-  border-right: 1px solid lighten($blue,4%);
+  margin-right: -4px !important;
+  border-left: 1px solid lighten($blue,4%);
   border-bottom: 1px solid lighten($blue,4%);
 }
 
