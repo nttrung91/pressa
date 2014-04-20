@@ -2190,6 +2190,7 @@ body {
   left: 0;
   width: 100%;
   background: white;
+  z-index: 10;
 }
 
 /* @Module: Result */
@@ -2235,6 +2236,7 @@ body {
   clear: both;
   padding-top: 56px;
   height: 100%;
+  position: relative;
 }
 
 /* @Module: Verb */
