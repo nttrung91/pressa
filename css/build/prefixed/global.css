@@ -1729,6 +1729,15 @@ button {
   color: white;
 }
 
+.btnSkin1 {
+  padding: 40px 0;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  background: #5290d2;
+  color: white;
+}
+
 /* ==========================================================================
    Template
    ========================================================================== */
@@ -2242,7 +2251,7 @@ body {
 /* @Module: Verb */
 
 .module--verb {
-  width: 120px;
+  width: 100px;
   height: 100%;
   max-height: 100%;
   overflow-y: auto;
@@ -2261,7 +2270,7 @@ body {
   background: #2b2b2b;
 }
 
-/* @Module: Verb */
+/* @Module: Noun */
 
 .module--noun {
   overflow: auto;
@@ -2271,7 +2280,7 @@ body {
   text-align: center;
 }
 
-.noun {
+.collection {
   position: relative;
   right: 2px;
   display: inline-block;
@@ -2282,9 +2291,14 @@ body {
   border-bottom: 1px solid #629ad6;
 }
 
-.btnNoun {
-  padding: 40px 0;
-  font-size: 20px;
-  width: 100%;
-  text-align: center;
+.collections.is--inActive {
+  display: none;
+}
+
+.noun {
+  display: none;
+}
+
+.noun.is--active {
+  display: block;
 }

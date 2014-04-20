@@ -9,8 +9,11 @@
 
      /* Set of buttons */
      $goBtn = $("#go"),
+     $clearBtn = $("#clear"),
      $verbBtn = $(".btnVerb"),
      $nounBtn = $(".btnNoun"),
+     $collectionBtn = $(".btnCollection"),
+     $collections = $(".collections"),
 
      /* Result Field */
      $result = $(".result"),
@@ -31,7 +34,7 @@ $nounBtn.click(function() {
 
 
 /* Go Button, when press -> make sound */
-$goBtn.click(function(e) {
+$goBtn.click(function() {
   var $sound = $("#sound"),
       src = "",
       keywords = "",
@@ -55,7 +58,25 @@ $goBtn.click(function(e) {
   // Check speed
   $checkIfSpeak = true;
 
-  e.preventDefault();
+});
+
+$clearBtn.click(function() {
+  // Clear the result box
+  $result.empty();
+});
+
+
+/* Show/Hide Collections */
+$collectionBtn.click(function() {
+  var $this = $(this),
+      collection = $this.data("collection"),
+      $noun = $('.noun[data-noun=' + collection + ']');
+  console.log(collection);
+
+  $collections.addClass('is--inActive');
+
+  $noun.addClass('is--active');
+
 });
 
 
@@ -65,8 +86,10 @@ function addKeywordToResult(element, e){
       currentResult = "";
 
   if($checkIfSpeak){
+
     // Clear the result box
     $result.empty();
+
     $checkIfSpeak = false;
   }
 

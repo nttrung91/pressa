@@ -8,7 +8,7 @@
 /* @Module: Verb */
 
 .module--verb{
-  width: 120px;
+  width: 100px;
   height: 100%;
   max-height: 100%;
   overflow-y: auto;
@@ -28,7 +28,7 @@
 }
 
 
-/* @Module: Verb */
+/* @Module: Noun */
 
 .module--noun{
   overflow: auto;
@@ -38,7 +38,8 @@
   text-align: center;
 }
 
-.noun{
+
+.collection{
   position: relative;
   right: 2px;
   display: inline-block;
@@ -49,11 +50,16 @@
   border-bottom: 1px solid lighten($blue,4%);
 }
 
-.btnNoun{
-  padding: 40px 0;
-  font-size: 20px;
-  width: 100%;
-  text-align: center;
+.collections.is--inActive{
+  display: none;
+}
+
+.noun{
+  display: none;
+}
+
+.noun.is--active{
+  display: block;
 }
 
 
