@@ -11,16 +11,24 @@
      $goBtn = $("#go"),
      $clearBtn = $("#clear"),
      $verbBtn = $(".btnVerb"),
-     $nounBtn = $(".btnNoun"),
+     $nounBtn = $(".word"),
      $collectionBtn = $(".btnCollection"),
+     $backBtn = $(".btnBack"),
+
+     /* Collection of nouns */
      $collections = $(".collections"),
+     $collection = $(".collection"),
+
+     /* Noun Module*/
+     $nouns = $('.nouns'),
+     $noun = $('.noun'),
 
      /* Result Field */
      $result = $(".result"),
 
     /* Check if already speak */
      $checkIfSpeak = false;
-     ;
+
 
 
 /* Add keywords to result field when press on verb or noun button */
@@ -68,15 +76,28 @@ $clearBtn.click(function() {
 
 /* Show/Hide Collections */
 $collectionBtn.click(function() {
-  var $this = $(this),
-      collection = $this.data("collection"),
-      $noun = $('.noun[data-noun=' + collection + ']');
+  var $this = $(this);
+
+  collection = $this.data("collection");
+  $noun = $('.noun[data-noun=' + collection + ']');
+  $nouns =$('.nouns');
+
+
   console.log(collection);
 
   $collections.addClass('is--inActive');
 
   $noun.addClass('is--active');
+  $nouns.addClass('is--active');
 
+});
+
+
+$backBtn.click(function() {
+  $collections.removeClass('is--inActive');
+
+  $noun.removeClass('is--active');
+  $nouns.removeClass('is--active');
 });
 
 
@@ -98,7 +119,7 @@ function addKeywordToResult(element, e){
 
 
   // Store the word
-  keywords = $element.data("tts-value");
+  keywords = $element.data("tts");
 
   $currentResult = $currentResult + keywords + " ";
 
