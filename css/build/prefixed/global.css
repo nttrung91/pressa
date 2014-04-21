@@ -1734,10 +1734,10 @@ button {
 }
 
 .btnSkin1 {
-  padding: 40px 0;
+  padding: 20px 0;
   font-size: 16px;
   width: 100%;
-  background: #5290d2;
+  background: #d3a24e;
   color: white;
 }
 
@@ -2329,6 +2329,17 @@ body {
   position: relative;
 }
 
+.imgWrap img {
+  width: 50%;
+  vertical-align: top;
+}
+
+.imgDescription {
+  display: block;
+  margin-top: 10px;
+  color: #2b2b2b;
+}
+
 .collection {
   position: relative;
   right: 2px;
@@ -2336,8 +2347,8 @@ body {
   vertical-align: top;
   width: 50%;
   margin-right: -4px !important;
-  border-left: 1px solid #629ad6;
-  border-bottom: 1px solid #629ad6;
+  border-left: 1px solid #d7ab5e;
+  border-bottom: 1px solid #d7ab5e;
 }
 
 .collections.is--inActive {
@@ -2353,6 +2364,10 @@ body {
   transition: left 200ms linear;
 }
 
+.nouns .placeholder {
+  display: none;
+}
+
 .noun {
   width: 100%;
   display: none;
@@ -2360,6 +2375,10 @@ body {
 
 .nouns.is--active {
   left: 0;
+}
+
+.nouns.is--active .placeholder {
+  display: block;
 }
 
 .noun.is--active {

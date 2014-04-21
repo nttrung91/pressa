@@ -61,6 +61,19 @@
   position: relative;
 }
 
+.imgWrap{
+  img{
+    width: 50%;
+    vertical-align: top;
+  }
+}
+
+.imgDescription{
+  display: block;
+  margin-top: 10px;
+  color: $black;
+}
+
 
 .collection{
   position: relative;
@@ -69,8 +82,8 @@
   vertical-align: top;
   width: 50%;
   margin-right: -4px !important;
-  border-left: 1px solid lighten($blue,4%);
-  border-bottom: 1px solid lighten($blue,4%);
+  border-left: 1px solid lighten($darkYellow,4%);
+  border-bottom: 1px solid lighten($darkYellow,4%);
 
 }
 
@@ -85,6 +98,10 @@
   top: 0;
   width: 100%;
   transition: left 200ms linear;
+
+  .placeholder{
+    display:none;
+  }
 }
 
 
@@ -95,6 +112,9 @@
 
 .nouns.is--active{
   left:0;
+  .placeholder{
+    display: block;
+  }
 }
 
 .noun.is--active{
