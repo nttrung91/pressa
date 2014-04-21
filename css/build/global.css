@@ -1913,6 +1913,7 @@ html, body {
 
 .app {
   height: 100%;
+  overflow: hidden;
 }
 .app ul, .app li {
   margin: 0;
@@ -1977,9 +1978,12 @@ html, body {
 /* Main */
 .main {
   clear: both;
-  padding-top: 80px;
   height: 100%;
   position: relative;
+}
+
+.placeholder {
+  height: 80px;
 }
 
 /* @Module: Pronoun */

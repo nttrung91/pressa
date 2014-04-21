@@ -2191,6 +2191,7 @@ body {
 
 .app {
   height: 100%;
+  overflow: hidden;
 }
 
 .app ul,
@@ -2262,9 +2263,12 @@ body {
 
 .main {
   clear: both;
-  padding-top: 80px;
   height: 100%;
   position: relative;
+}
+
+.placeholder {
+  height: 80px;
 }
 
 /* @Module: Pronoun */

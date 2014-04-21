@@ -1,8 +1,11 @@
 .main{
   clear:both;
-  padding-top: $marginTop;
   height: 100%;
   position: relative;
+}
+
+.placeholder{
+  height: $marginTop;
 }
 
 /* @Module: Pronoun */
