@@ -20,6 +20,11 @@
   background: $black;
 }
 
+.pronoun{
+  border-bottom: 1px solid lighten($black,4%);
+  border-right: 1px solid lighten($black,4%);
+}
+
 /* @Module: Verb */
 
 .module--verb, .module--pronoun{
@@ -67,8 +72,6 @@
   border-left: 1px solid lighten($blue,4%);
   border-bottom: 1px solid lighten($blue,4%);
 
-  // Remove this later
-  // display: none;
 }
 
 .collections.is--inActive{
@@ -88,8 +91,6 @@
 .noun{
   width: 100%;
   display: none;
-  // Remove this later
-  // left: 0;
 }
 
 .nouns.is--active{
