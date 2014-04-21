@@ -1719,6 +1719,10 @@ button {
   text-align: center;
 }
 
+.btn:hover {
+  background: #d3a24e;
+}
+
 /**
 * @desc         Button skins
 * @extends      .btn

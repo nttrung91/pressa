@@ -10,6 +10,7 @@
      /* Set of buttons */
      $goBtn = $("#go"),
      $clearBtn = $("#clear"),
+     $pronounBtn = $('.btnPronoun'),
      $verbBtn = $(".btnVerb"),
      $nounBtn = $(".word"),
      $collectionBtn = $(".btnCollection"),
@@ -39,6 +40,11 @@ $verbBtn.click(function() {
 $nounBtn.click(function() {
   addKeywordToResult($(this));
 });
+
+$pronounBtn.click(function() {
+  addKeywordToResult($(this));
+});
+
 
 
 /* Go Button, when press -> make sound */

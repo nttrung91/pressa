@@ -24,4 +24,8 @@ button {
   border: 0;
   background: none;
   text-align: center;
+
+  &:hover{
+    background: $darkYellow;
+  }
 }
