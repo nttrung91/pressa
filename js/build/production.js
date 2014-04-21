@@ -98,6 +98,8 @@ $collectionBtn.click(function() {
   $noun.addClass('is--active');
   $nouns.addClass('is--active');
 
+  $backBtn.addClass('is--active');
+
 });
 
 
@@ -106,6 +108,9 @@ $backBtn.click(function() {
 
   $noun.removeClass('is--active');
   $nouns.removeClass('is--active');
+
+  $backBtn.removeClass('is--active');
+
 });
 
 

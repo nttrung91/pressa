@@ -149,12 +149,12 @@ $use-nav: true;
  /**************
   * Top
   **************/
-$topHeight: 56px;
+$topHeight: 40px;
 
 
 /**************
  * Main
  **************/
-
+$marginTop: $topHeight + $topHeight;
 
 

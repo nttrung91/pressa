@@ -1494,7 +1494,6 @@ button {
   padding: 40px 0;
   font-size: 20px;
   width: 100%;
-  text-align: center;
   background: #5290d2;
   color: white;
 }
@@ -1503,7 +1502,6 @@ button {
   padding: 40px 0;
   font-size: 20px;
   width: 100%;
-  text-align: center;
   background: #ff4e45;
   color: white;
 }
@@ -1930,6 +1928,17 @@ html, body {
   z-index: 10;
 }
 
+/* Logo */
+.logo {
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
 /* @Module: Result */
 .module--result {
   background: #eee;
@@ -1944,15 +1953,15 @@ html, body {
 .result {
   font-size: 16px;
   display: block;
-  height: 56px;
-  line-height: 56px;
+  height: 40px;
+  line-height: 40px;
   font-weight: bold;
 }
 
 /* Buttons */
 .btnCircle {
-  height: 56px;
-  width: 63px;
+  height: 40px;
+  width: 53px;
   padding: 0;
   font-size: 20px;
 }
@@ -1968,19 +1977,33 @@ html, body {
 /* Main */
 .main {
   clear: both;
-  padding-top: 56px;
+  padding-top: 80px;
   height: 100%;
   position: relative;
 }
 
+/* @Module: Pronoun */
+.module--pronoun {
+  width: 60px;
+}
+
+.btnPronoun {
+  padding: 23px 0;
+  width: 100%;
+  font-size: 16px;
+  background: #2b2b2b;
+}
+
 /* @Module: Verb */
-.module--verb {
-  width: 100px;
+.module--verb, .module--pronoun {
   height: 100%;
   max-height: 100%;
   overflow-y: auto;
   float: left;
-  border-right: 1px solid #353535;
+}
+
+.module--verb {
+  width: 80px;
 }
 
 .verb {
@@ -1990,7 +2013,7 @@ html, body {
 .btnVerb {
   padding: 23px 0;
   width: 100%;
-  font-size: 18px;
+  font-size: 16px;
   background: #2b2b2b;
 }
 
@@ -2043,10 +2066,16 @@ html, body {
 .word {
   width: 50%;
   margin-right: -4px;
-  display: inline-block;
-  vertical-align: top;
-  border-left: 1px solid #629ad6;
-  border-bottom: 1px solid #629ad6;
+  border-left: 1px solid #ff6159;
+  border-bottom: 1px solid #ff6159;
   position: relative;
   right: 2px;
+}
+
+.btnBack {
+  display: none;
+}
+
+.btnBack.is--active {
+  display: block;
 }

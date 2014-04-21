@@ -7,6 +7,16 @@
   z-index: 10;
 }
 
+/* Logo */
+.logo{
+  display: block;
+  width: 100%;
+  height: $topHeight;
+  line-height: $topHeight;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 /* @Module: Result */
 
@@ -32,7 +42,7 @@
 
 .btnCircle{
   height: $topHeight;
-  width: 63px;
+  width: 53px;
   padding: 0;
   font-size: 20px;
 }
