@@ -146,6 +146,11 @@ $use-nav: true;
   **************/
   $babyGutter: 20px;
 
+/**************
+* App
+**************/
+$appBg: $spaceGrey;
+
  /**************
   * Top
   **************/
@@ -161,14 +166,16 @@ $marginTop: $topHeight;
 /**************
  * Button
  **************/
-$btnPronounBgColor: lighten($blue,30%);
-$btnPronounColor: $blue;
+$btnPronounBgColor: lighten($blue,35%);
+$btnPronounColor: darken($blue,15%);
 $borderPronounColor: darken($btnPronounBgColor,5%);
 
 
-$btnVerbBgColor: lighten($darkYellow,30%);
-$btnVerbColor: darken($darkYellow,10%);
+$btnVerbBgColor: lighten($darkYellow,35%);
+$btnVerbColor: darken($darkYellow,15%);
 $borderVerbColor: darken($btnVerbBgColor,5%);
 
-
+$btnCollectionBgColor: $green;
+$btnCollectionColor: $black;
+$btnCollectionBorder: lighten($btnCollectionBgColor,10%);
 

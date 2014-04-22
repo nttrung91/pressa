@@ -134,11 +134,9 @@
   vertical-align: top;
   width: 50%;
   margin-right: -4px !important;
-  border-left: 1px solid lighten($darkYellow,4%);
-  border-bottom: 1px solid lighten($darkYellow,4%);
 
   @include bp(papa-bear){
-    width: 33.33%;
+    width: 33.45%;
   }
 }
 
@@ -193,8 +191,6 @@
 .word{
   width: 50%;
   margin-right: -4px;
-  border-left: 1px solid lighten($darkOrange,4%);
-  border-bottom: 1px solid lighten($darkOrange,4%);
   position: relative;
   right: 2px;
 

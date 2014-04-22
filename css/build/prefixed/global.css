@@ -92,6 +92,10 @@
  **************/
 
 /**************
+* App
+**************/
+
+/**************
  * Top
  **************/
 
@@ -1737,8 +1741,10 @@ button {
   padding: 20px 0;
   font-size: 16px;
   width: 100%;
-  background: #d3a24e;
-  color: white;
+  background: #defddc;
+  color: #2b2b2b;
+  border-right: 1px solid #9af795;
+  border-bottom: 1px solid #9af795;
 }
 
 @media (min-width: 1100px) {
@@ -2203,6 +2209,7 @@ body {
 .app {
   height: 100%;
   overflow: hidden;
+  background: #272e38;
 }
 
 .app ul,
@@ -2237,7 +2244,7 @@ body {
 
 .module--result {
   background: white;
-  box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.6);
+  box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
 .resultField {
@@ -2332,8 +2339,8 @@ body {
   padding: 23px 0;
   width: 100%;
   font-size: 16px;
-  background: #cbdef2;
-  color: #5290d2;
+  background: #e0ebf7;
+  color: #2c6aab;
 }
 
 @media (min-width: 880px) {
@@ -2350,8 +2357,8 @@ body {
 }
 
 .pronoun {
-  border-bottom: 1px solid #b7d1ec;
-  border-right: 1px solid #b7d1ec;
+  border-bottom: 1px solid #cbdef2;
+  border-right: 1px solid #cbdef2;
 }
 
 /* @Module: Verb */
@@ -2401,16 +2408,16 @@ body {
 }
 
 .verb {
-  border-bottom: 1px solid #ecd8b4;
-  border-right: 1px solid #ecd8b4;
+  border-bottom: 1px solid #f1e2c9;
+  border-right: 1px solid #f1e2c9;
 }
 
 .btnVerb {
   padding: 23px 0;
   width: 100%;
   font-size: 16px;
-  background: #f1e2c9;
-  color: #bf8a2f;
+  background: #f7eddd;
+  color: #aa7b2a;
   text-transform: lowercase;
 }
 
@@ -2473,13 +2480,11 @@ body {
   vertical-align: top;
   width: 50%;
   margin-right: -4px !important;
-  border-left: 1px solid #d7ab5e;
-  border-bottom: 1px solid #d7ab5e;
 }
 
 @media (min-width: 1100px) {
   .collection {
-    width: 33.33%;
+    width: 33.45%;
   }
 }
 
@@ -2527,8 +2532,6 @@ body {
 .word {
   width: 50%;
   margin-right: -4px;
-  border-left: 1px solid #ff6159;
-  border-bottom: 1px solid #ff6159;
   position: relative;
   right: 2px;
 }

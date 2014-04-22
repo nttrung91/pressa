@@ -12,8 +12,11 @@
   padding: 20px 0;
   font-size: 16px;
   width: 100%;
-  background: $darkYellow;
-  color:white;
+  background: lighten($btnCollectionBgColor,25%);
+  color: $btnCollectionColor;
+  border-right: 1px solid $btnCollectionBorder;
+  border-bottom: 1px solid $btnCollectionBorder;
+
 
   @include bp(papa-bear){
     font-size: 22px;

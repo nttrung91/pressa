@@ -5,6 +5,7 @@ html, body{
 .app{
   height: 100%;
   overflow: hidden;
+  background: $appBg;
 
   ul, li{
     margin: 0;
