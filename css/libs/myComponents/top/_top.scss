@@ -28,6 +28,10 @@
   width: auto;
   overflow: hidden;
   padding: 0 15px;
+
+  @include bp(papa-bear){
+    padding: 0 35px;
+  }
 }
 
 .result{
@@ -36,6 +40,12 @@
   height: $topHeight;
   line-height: $topHeight;
   font-weight: bold;
+
+  @include bp(papa-bear){
+    height: 150px;
+    line-height: 150px;
+    font-size: 31px;
+  }
 }
 
 /* Buttons */
@@ -45,6 +55,12 @@
   width: 53px;
   padding: 0;
   font-size: 20px;
+
+  @include bp(papa-bear){
+    height: 150px;
+    width: 150px;
+    font-size: 40px;
+  }
 }
 
 .btnGo{

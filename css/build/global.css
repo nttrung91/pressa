@@ -1500,6 +1500,11 @@ button {
   background: #d3a24e;
   color: white;
 }
+@media (min-width: 1100px) {
+  .btnSkin1 {
+    font-size: 22px;
+  }
+}
 
 .btnSkin2 {
   padding: 40px 0;
@@ -1953,6 +1958,11 @@ html, body {
   overflow: hidden;
   padding: 0 15px;
 }
+@media (min-width: 1100px) {
+  .resultField {
+    padding: 0 35px;
+  }
+}
 
 .result {
   font-size: 16px;
@@ -1961,6 +1971,13 @@ html, body {
   line-height: 50px;
   font-weight: bold;
 }
+@media (min-width: 1100px) {
+  .result {
+    height: 150px;
+    line-height: 150px;
+    font-size: 31px;
+  }
+}
 
 /* Buttons */
 .btnCircle {
@@ -1968,6 +1985,13 @@ html, body {
   width: 53px;
   padding: 0;
   font-size: 20px;
+}
+@media (min-width: 1100px) {
+  .btnCircle {
+    height: 150px;
+    width: 150px;
+    font-size: 40px;
+  }
 }
 
 .btnGo {
@@ -1986,20 +2010,32 @@ html, body {
 }
 
 .placeholder {
-  height: 100px;
+  height: 50px;
+}
+@media (min-width: 1100px) {
+  .placeholder {
+    height: 150px;
+  }
 }
 
 /* @Module: Pronoun */
-.module--pronoun {
-  width: 70px;
-}
-
 .btnPronoun {
   padding: 23px 0;
   width: 100%;
   font-size: 16px;
   background: #2b2b2b;
   color: #ff4e45;
+}
+@media (min-width: 880px) {
+  .btnPronoun {
+    padding: 30px 0;
+  }
+}
+@media (min-width: 1100px) {
+  .btnPronoun {
+    padding: 43px 0;
+    font-size: 23px;
+  }
 }
 
 .pronoun {
@@ -2013,10 +2049,32 @@ html, body {
   max-height: 100%;
   overflow-y: auto;
   float: left;
-}
-
-.module--verb {
   width: 70px;
+}
+@media (min-width: 480px) {
+  .module--verb, .module--pronoun {
+    width: 100px;
+  }
+}
+@media (min-width: 640px) {
+  .module--verb, .module--pronoun {
+    width: 140px;
+  }
+}
+@media (min-width: 880px) {
+  .module--verb, .module--pronoun {
+    width: 170px;
+  }
+}
+@media (min-width: 1100px) {
+  .module--verb, .module--pronoun {
+    width: 200px;
+  }
+}
+@media (min-width: 1400px) {
+  .module--verb, .module--pronoun {
+    width: 220px;
+  }
 }
 
 .verb {
@@ -2032,6 +2090,17 @@ html, body {
   color: #36cec7;
   text-transform: lowercase;
 }
+@media (min-width: 880px) {
+  .btnVerb {
+    padding: 30px 0;
+  }
+}
+@media (min-width: 1100px) {
+  .btnVerb {
+    padding: 43px 0;
+    font-size: 23px;
+  }
+}
 
 /* @Module: Noun */
 .module--noun {
@@ -2041,6 +2110,11 @@ html, body {
   max-height: 100%;
   text-align: center;
   position: relative;
+}
+@media (min-width: 1100px) {
+  .module--noun {
+    text-align: left;
+  }
 }
 
 .btnSkin1 {
@@ -2065,6 +2139,11 @@ html, body {
   margin-right: -4px !important;
   border-left: 1px solid #d7ab5e;
   border-bottom: 1px solid #d7ab5e;
+}
+@media (min-width: 1100px) {
+  .collection {
+    width: 33.33%;
+  }
 }
 
 .collections.is--inActive {
@@ -2105,6 +2184,11 @@ html, body {
   border-bottom: 1px solid #ff6159;
   position: relative;
   right: 2px;
+}
+@media (min-width: 1100px) {
+  .word {
+    width: 33.33%;
+  }
 }
 
 .btnBack {

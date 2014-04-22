@@ -14,6 +14,10 @@
   width: 100%;
   background: $darkYellow;
   color:white;
+
+  @include bp(papa-bear){
+    font-size: 22px;
+  }
 }
 
 .btnSkin2{
