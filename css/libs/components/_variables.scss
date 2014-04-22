@@ -161,12 +161,12 @@ $marginTop: $topHeight;
 /**************
  * Button
  **************/
-$btnBgColor: $black;
+$btnBgColor: #E4E0D9;
 
-$btnPronounColor: $darkOrange;
-$btnVerbColor: $teal;
+$btnPronounColor: #504A44;
+$btnVerbColor: $darkOrange;
 
-$borderColor: lighten($btnBgColor,5%);
+$borderColor: darken($btnBgColor,5%);
 
 
 

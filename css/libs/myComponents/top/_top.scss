@@ -21,7 +21,8 @@
 /* @Module: Result */
 
 .module--result{
-  background: #eee;
+  background: white;
+  box-shadow: 3px 0px 5px rgba(black, 0.6);
 }
 
 .resultField{
@@ -42,8 +43,8 @@
   font-weight: bold;
 
   @include bp(papa-bear){
-    height: 150px;
-    line-height: 150px;
+    height: 130px;
+    line-height: 130px;
     font-size: 31px;
   }
 }
@@ -55,20 +56,33 @@
   width: 53px;
   padding: 0;
   font-size: 20px;
+  color: $black;
+  background: #f5f5f5;
+  border-left: 1px solid #eaeaea;
 
   @include bp(papa-bear){
-    height: 150px;
-    width: 150px;
+    height: 130px;
+    width: 130px;
     font-size: 40px;
+    transition: background 60ms linear,
+                color 60ms linear;
   }
 }
 
 .btnGo{
-  background: $teal;
+  color: $teal;
+  &:hover{
+    background: $teal;
+    color: white;
+  }
 }
 
 .btnClear{
-  background: $darkOrange;
+  color: $darkOrange;
+  &:hover{
+    background: $darkOrange;
+    color: white;
+  }
 }
 
 
