@@ -161,13 +161,14 @@ $marginTop: $topHeight;
 /**************
  * Button
  **************/
-$btnBgColor: #E4E0D9;
+$btnPronounBgColor: lighten($blue,30%);
+$btnPronounColor: $blue;
+$borderPronounColor: darken($btnPronounBgColor,5%);
 
-$btnPronounColor: #504A44;
-$btnVerbColor: $darkOrange;
 
-$borderColor: darken($btnBgColor,5%);
-
+$btnVerbBgColor: lighten($darkYellow,30%);
+$btnVerbColor: darken($darkYellow,10%);
+$borderVerbColor: darken($btnVerbBgColor,5%);
 
 
 
