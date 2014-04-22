@@ -149,12 +149,25 @@ $use-nav: true;
  /**************
   * Top
   **************/
-$topHeight: 40px;
+$topHeight: 50px;
 
 
 /**************
  * Main
  **************/
 $marginTop: $topHeight + $topHeight;
+
+
+/**************
+ * Button
+ **************/
+$btnBgColor: $black;
+
+$btnPronounColor: $darkOrange;
+$btnVerbColor: $teal;
+
+$borderColor: lighten($btnBgColor,5%);
+
+
 
 

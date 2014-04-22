@@ -17,12 +17,13 @@
   padding: 23px 0;
   width: 100%;
   font-size: 16px;
-  background: $black;
+  background: $btnBgColor;
+  color: $btnPronounColor;
 }
 
 .pronoun{
-  border-bottom: 1px solid lighten($black,4%);
-  border-right: 1px solid lighten($black,4%);
+  border-bottom: 1px solid $borderColor;
+  border-right: 1px solid $borderColor;
 }
 
 /* @Module: Verb */
@@ -39,14 +40,17 @@
 }
 
 .verb{
-  border-bottom: 1px solid lighten($black,4%);
+  border-bottom: 1px solid $borderColor;
+  border-right: 1px solid $borderColor;
 }
 
 .btnVerb{
   padding: 23px 0;
   width: 100%;
   font-size: 16px;
-  background: $black;
+  background: $btnBgColor;
+  color: $btnVerbColor;
+  text-transform: lowercase;
 }
 
 
@@ -61,17 +65,20 @@
   position: relative;
 }
 
-.imgWrap{
-  img{
-    width: 50%;
-    vertical-align: top;
+.btnSkin1{
+  vertical-align: top;
+  .imgWrap{
+    img{
+      width: 50%;
+      vertical-align: top;
+    }
   }
-}
 
-.imgDescription{
-  display: block;
-  margin-top: 10px;
-  color: $black;
+  .imgDescription{
+    display: block;
+    margin-top: 10px;
+    color: $black;
+  }
 }
 
 
@@ -102,6 +109,7 @@
   .placeholder{
     display:none;
   }
+
 }
 
 
@@ -111,7 +119,8 @@
 }
 
 .nouns.is--active{
-  left:0;
+  left: 0;
+
   .placeholder{
     display: block;
   }
@@ -132,6 +141,7 @@
 
 .btnBack{
   display: none;
+  background: #ccc;
 }
 
 .btnBack.is--active{

@@ -66,6 +66,9 @@
 /**************
  * Main
  **************/
+/**************
+ * Button
+ **************/
 /**
  * We are using most of Normalize CSS with these modifications:
  *
@@ -1480,9 +1483,6 @@ button {
   background: none;
   text-align: center;
 }
-.btn:hover {
-  background: #d3a24e;
-}
 
 /**
 * @desc         Button skins
@@ -1936,8 +1936,8 @@ html, body {
 .logo {
   display: block;
   width: 100%;
-  height: 40px;
-  line-height: 40px;
+  height: 50px;
+  line-height: 50px;
   font-size: 14px;
   text-align: center;
   text-transform: uppercase;
@@ -1957,14 +1957,14 @@ html, body {
 .result {
   font-size: 16px;
   display: block;
-  height: 40px;
-  line-height: 40px;
+  height: 50px;
+  line-height: 50px;
   font-weight: bold;
 }
 
 /* Buttons */
 .btnCircle {
-  height: 40px;
+  height: 50px;
   width: 53px;
   padding: 0;
   font-size: 20px;
@@ -1986,7 +1986,7 @@ html, body {
 }
 
 .placeholder {
-  height: 80px;
+  height: 100px;
 }
 
 /* @Module: Pronoun */
@@ -1999,11 +1999,12 @@ html, body {
   width: 100%;
   font-size: 16px;
   background: #2b2b2b;
+  color: #ff4e45;
 }
 
 .pronoun {
-  border-bottom: 1px solid #353535;
-  border-right: 1px solid #353535;
+  border-bottom: 1px solid #383838;
+  border-right: 1px solid #383838;
 }
 
 /* @Module: Verb */
@@ -2019,7 +2020,8 @@ html, body {
 }
 
 .verb {
-  border-bottom: 1px solid #353535;
+  border-bottom: 1px solid #383838;
+  border-right: 1px solid #383838;
 }
 
 .btnVerb {
@@ -2027,6 +2029,8 @@ html, body {
   width: 100%;
   font-size: 16px;
   background: #2b2b2b;
+  color: #36cec7;
+  text-transform: lowercase;
 }
 
 /* @Module: Noun */
@@ -2039,12 +2043,14 @@ html, body {
   position: relative;
 }
 
-.imgWrap img {
+.btnSkin1 {
+  vertical-align: top;
+}
+.btnSkin1 .imgWrap img {
   width: 50%;
   vertical-align: top;
 }
-
-.imgDescription {
+.btnSkin1 .imgDescription {
   display: block;
   margin-top: 10px;
   color: #2b2b2b;
@@ -2103,6 +2109,7 @@ html, body {
 
 .btnBack {
   display: none;
+  background: #ccc;
 }
 
 .btnBack.is--active {

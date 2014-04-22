@@ -86,7 +86,7 @@ $collectionBtn.click(function() {
 
   collection = $this.data("collection");
   $noun = $('.noun[data-noun=' + collection + ']');
-  $nouns =$('.nouns');
+  $nouns = $('.nouns');
 
 
   console.log(collection);
@@ -117,6 +117,7 @@ function addKeywordToResult(element, e){
   var $element = element,
       currentResult = "";
 
+  /* Check if the word is already spoken */
   if($checkIfSpeak){
 
     // Clear the result box
@@ -135,6 +136,8 @@ function addKeywordToResult(element, e){
   $currentResult = $currentResult + keywords + " ";
 
   $currentResult = $currentResult.replace("+"," ");
+
+  $currentResult = $currentResult.replace($currentResult[0],$currentResult[0].toUpperCase());
 
   $result.text($currentResult);
 
