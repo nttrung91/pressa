@@ -28,6 +28,10 @@
   @include bp(papa-bear){
     padding: 43px 0;
     font-size: 23px;
+
+    &:hover{
+      background: $btnPronounBgColorHover;
+    }
   }
 }
 
@@ -87,6 +91,10 @@
   @include bp(papa-bear){
     padding: 43px 0;
     font-size: 23px;
+
+    &:hover{
+      background:  $btnVerbBgColorHover;
+    }
   }
 }
 

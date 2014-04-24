@@ -167,15 +167,20 @@ $marginTop: $topHeight;
  * Button
  **************/
  $btnPronounBgColor: lighten($blue,35%);
+ $btnPronounBgColorHover: darken($btnPronounBgColor,7%);
  $btnPronounColor: darken($blue,15%);
  $borderPronounColor: darken($btnPronounBgColor,5%);
 
 
+
  $btnVerbBgColor: lighten($darkYellow,35%);
+ $btnVerbBgColorHover: darken($btnVerbBgColor,7%);
  $btnVerbColor: darken($darkYellow,15%);
  $borderVerbColor: darken($btnVerbBgColor,5%);
 
- $btnCollectionBgColor: $green;
+
+ $btnCollectionBgColor: lighten($green,25%);
+ $btnCollectionBgColorHover: darken($btnCollectionBgColor,7%);
  $btnCollectionColor: $black;
- $btnCollectionBorder: lighten($btnCollectionBgColor,10%);
+ $btnCollectionBorder: darken($btnCollectionBgColor,10%);
 

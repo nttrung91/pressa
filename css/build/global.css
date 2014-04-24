@@ -1502,14 +1502,17 @@ button {
   width: 100%;
   background: #defddc;
   color: #2b2b2b;
-  border-right: 1px solid #9af795;
-  border-bottom: 1px solid #9af795;
+  border-right: 1px solid #b1f9ac;
+  border-bottom: 1px solid #b1f9ac;
 }
 @media (min-width: 1100px) {
   .btnSkin1 {
     font-size: 22px;
     padding: 35px 0;
     height: 300px;
+  }
+  .btnSkin1:hover {
+    background: #befabb;
   }
 }
 
@@ -2058,6 +2061,9 @@ html, body {
     padding: 43px 0;
     font-size: 23px;
   }
+  .btnPronoun:hover {
+    background: #c3d9ef;
+  }
 }
 
 .pronoun {
@@ -2121,6 +2127,9 @@ html, body {
   .btnVerb {
     padding: 43px 0;
     font-size: 23px;
+  }
+  .btnVerb:hover {
+    background: #efdec0;
   }
 }
 
