@@ -1,8 +1,8 @@
 /*
  * TTS (Text to Speed)
  */
-
- var srcHead = "http://api.voicerss.org/?key=8aeeba23cecf4c36a423044b3e6237f6&src=",
+// 85aac3664d624c01b126fe459af95291
+ var srcHead = "http://api.voicerss.org/?key=85aac3664d624c01b126fe459af95291&src=",
      srcTail = "&hl=en-gb",
      sourceHead = '<source src="',
      sourceTail = ' ">',
@@ -49,30 +49,19 @@ $pronounBtn.click(function() {
 
 /* Go Button, when press -> make sound */
 $goBtn.click(function() {
-  var $sound = $("#sound"),
-      src = "",
-      keywords = "",
-      audio = "";
+  var $resultText = $result.text();
 
-  // Clear all previous sounds
-  $sound.empty();
+  if(!$resultText.trim()){
+    makeSound("press+on+a+word");
+  }else{
+    makeSound($resultText);
 
-  // Build up the API Link
-  src = srcHead + $result.text() + srcTail;
-
-  // Create audio object
-  audio = sourceHead + src + sourceTail;
-
-  // Append the object to the DOM
-  $sound.append(audio);
-
-  // Make it play sound
-  $('#sound')[0].play();
-
-  // Check speed
-  $checkIfSpeak = true;
-
+    // Check if speak
+    $checkIfSpeak = true;
+  }
 });
+
+
 
 $clearBtn.click(function() {
   // Clear the result box
@@ -112,6 +101,30 @@ $backBtn.click(function() {
 });
 
 
+function makeSound(keyword){
+  var $sound = $("#sound"),
+      src = "",
+      $keyword = keyword,
+      audio = "";
+
+  // Clear all previous sounds
+  $sound.empty();
+
+  // Build up the API Link
+  src = srcHead + $keyword + srcTail;
+
+  // Create audio object
+  audio = sourceHead + src + sourceTail;
+
+  // Append the object to the DOM
+  $sound.append(audio);
+
+  // Make it play sound
+  $('#sound')[0].play();
+
+}
+
+
 /* Add keywords to result */
 function addKeywordToResult(element, e){
   var $element = element,
@@ -141,5 +154,32 @@ function addKeywordToResult(element, e){
 
   $result.text($currentResult);
 
+  makeSound(keywords);
+
 }
+
+
+$('a[href*=#]:not([href=#])').click(function() {
+  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+    if (target.length) {
+      $('html,body').animate({
+        scrollTop: target.offset().top
+      }, 1000);
+      return false;
+    }
+  }
+});
+
+
+
+// $("#scroll").click(function(){
+//   $('#bot').stop().scrollTo(800 );
+// });
+
+
+
+
+
 
