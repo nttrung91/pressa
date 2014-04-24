@@ -41,6 +41,7 @@
   height: $topHeight;
   line-height: $topHeight;
   font-weight: bold;
+  color: #666;
 
   @include bp(papa-bear){
     height: 130px;
@@ -63,7 +64,7 @@
   @include bp(papa-bear){
     height: 130px;
     width: 130px;
-    font-size: 40px;
+    font-size: 50px;
     transition: background 60ms linear,
                 color 60ms linear;
   }
