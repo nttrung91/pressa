@@ -1747,15 +1747,15 @@ button {
   border-bottom: 1px solid #b1f9ac;
 }
 
+.btnSkin1:hover {
+  background: #befabb;
+}
+
 @media (min-width: 1100px) {
   .btnSkin1 {
     font-size: 22px;
     padding: 35px 0;
     height: 300px;
-  }
-
-  .btnSkin1:hover {
-    background: #befabb;
   }
 }
 
@@ -2374,6 +2374,10 @@ body {
   color: #2c6aab;
 }
 
+.btnPronoun:hover {
+  background: #c3d9ef;
+}
+
 @media (min-width: 880px) {
   .btnPronoun {
     padding: 30px 0;
@@ -2384,10 +2388,6 @@ body {
   .btnPronoun {
     padding: 43px 0;
     font-size: 23px;
-  }
-
-  .btnPronoun:hover {
-    background: #c3d9ef;
   }
 }
 
@@ -2456,6 +2456,10 @@ body {
   text-transform: lowercase;
 }
 
+.btnVerb:hover {
+  background: #efdec0;
+}
+
 @media (min-width: 880px) {
   .btnVerb {
     padding: 30px 0;
@@ -2466,10 +2470,6 @@ body {
   .btnVerb {
     padding: 43px 0;
     font-size: 23px;
-  }
-
-  .btnVerb:hover {
-    background: #efdec0;
   }
 }
 

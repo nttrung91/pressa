@@ -25,6 +25,10 @@
   background: $btnPronounBgColor;
   color: $btnPronounColor;
 
+  &:hover{
+    background: $btnPronounBgColorHover;
+  }
+
   @include bp(mama-bear){
     padding: 30px 0;
   }
@@ -32,10 +36,6 @@
   @include bp(papa-bear){
     padding: 43px 0;
     font-size: 23px;
-
-    &:hover{
-      background: $btnPronounBgColorHover;
-    }
   }
 }
 
@@ -88,6 +88,10 @@
   color: $btnVerbColor;
   text-transform: lowercase;
 
+  &:hover{
+    background:  $btnVerbBgColorHover;
+  }
+
   @include bp(mama-bear){
     padding: 30px 0;
   }
@@ -95,10 +99,6 @@
   @include bp(papa-bear){
     padding: 43px 0;
     font-size: 23px;
-
-    &:hover{
-      background:  $btnVerbBgColorHover;
-    }
   }
 }
 
