@@ -2273,6 +2273,14 @@ body {
   color: #666;
 }
 
+@media (min-width: 640px) {
+  .result {
+    height: 70px;
+    line-height: 70px;
+    font-size: 24px;
+  }
+}
+
 @media (min-width: 1100px) {
   .result {
     height: 130px;
@@ -2291,6 +2299,16 @@ body {
   color: #2b2b2b;
   background: #f5f5f5;
   border-left: 1px solid #eaeaea;
+}
+
+@media (min-width: 1100px) {
+  .btnCircle {
+    height: 130px;
+    width: 130px;
+    font-size: 50px;
+    -webkit-transition: background 60ms linear, color 60ms linear;
+    transition: background 60ms linear, color 60ms linear;
+  }
 }
 
 @media (min-width: 1100px) {
