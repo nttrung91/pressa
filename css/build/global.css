@@ -2161,13 +2161,8 @@ html, body {
   width: auto;
   height: 100%;
   max-height: 100%;
-  text-align: center;
+  text-align: left;
   position: relative;
-}
-@media (min-width: 1100px) {
-  .module--noun {
-    text-align: left;
-  }
 }
 
 .btnSkin1 {
@@ -2186,11 +2181,21 @@ html, body {
   display: block;
   margin-top: 35px;
   color: #2b2b2b;
+  font-size: 16px;
+}
+@media (min-width: 640px) {
+  .btnSkin1 .imgDescription {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1100px) {
+  .btnSkin1 .imgDescription {
+    font-size: 23px;
+  }
 }
 
 .collection {
   position: relative;
-  right: 2px;
   display: inline-block;
   vertical-align: top;
   width: 50%;
@@ -2243,7 +2248,6 @@ html, body {
   width: 50%;
   margin-right: -4px;
   position: relative;
-  right: 2px;
 }
 @media (min-width: 1100px) {
   .word {
