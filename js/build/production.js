@@ -187,10 +187,9 @@ function addKeywordToResult(element, e){
 
 
 function delayMessage(){
+  clearTimeout(timeout);
   timeout();
 }
-
-delayMessage();
 
 
 
