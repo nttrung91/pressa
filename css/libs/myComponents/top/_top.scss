@@ -42,6 +42,8 @@
   line-height: $topHeight;
   font-weight: bold;
   color: #666;
+  overflow-x: auto;
+  line-height: 1.6;
 
   @include bp(teen-bear){
     height: 70px;

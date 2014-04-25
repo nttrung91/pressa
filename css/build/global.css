@@ -1983,6 +1983,8 @@ html, body {
   line-height: 50px;
   font-weight: bold;
   color: #666;
+  overflow-x: auto;
+  line-height: 1.6;
 }
 @media (min-width: 640px) {
   .result {

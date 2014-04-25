@@ -1,7 +1,7 @@
 /*
  * TTS (Text to Speed)
  */
-// 85aac3664d624c01b126fe459af95291
+//
  var srcHead = "http://api.voicerss.org/?key=85aac3664d624c01b126fe459af95291&src=",
      srcTail = "&hl=en-gb",
      sourceHead = '<source src="',
@@ -30,9 +30,11 @@
     /* Check if already speak */
      $checkIfSpeak = false,
 
-     timeout = setTimeout(function(){
+     timeout = function(){
+                 setTimeout(function(){
                  makeSound("Press on a word");
                },10000);
+              }
 
 
 
@@ -170,7 +172,7 @@ function addKeywordToResult(element, e){
 
 
 function delayMessage(){
-  timeOut();
+  timeout();
 }
 
 delayMessage();
