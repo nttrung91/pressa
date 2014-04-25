@@ -35,14 +35,18 @@
 /* Add keywords to result field when press on verb or noun button */
 $verbBtn.click(function() {
   addKeywordToResult($(this));
+  delayMessage();
+
 });
 
 $nounBtn.click(function() {
   addKeywordToResult($(this));
+  delayMessage();
 });
 
 $pronounBtn.click(function() {
   addKeywordToResult($(this));
+  delayMessage();
 });
 
 
@@ -159,24 +163,14 @@ function addKeywordToResult(element, e){
 }
 
 
-$('a[href*=#]:not([href=#])').click(function() {
-  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-    var target = $(this.hash);
-    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-    if (target.length) {
-      $('html,body').animate({
-        scrollTop: target.offset().top
-      }, 1000);
-      return false;
-    }
-  }
-});
+function delayMessage(){
+  setTimeout(function(){
+    makeSound("Press on a word");
+  },10000);
+}
 
+delayMessage();
 
-
-// $("#scroll").click(function(){
-//   $('#bot').stop().scrollTo(800 );
-// });
 
 
 
