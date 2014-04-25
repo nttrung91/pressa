@@ -2301,11 +2301,11 @@ body {
   border-left: 1px solid #eaeaea;
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 640px) {
   .btnCircle {
-    height: 130px;
-    width: 130px;
-    font-size: 50px;
+    height: 70px;
+    width: 70px;
+    font-size: 26px;
     -webkit-transition: background 60ms linear, color 60ms linear;
     transition: background 60ms linear, color 60ms linear;
   }
