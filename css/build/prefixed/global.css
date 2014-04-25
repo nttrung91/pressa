@@ -2351,6 +2351,12 @@ body {
   height: 50px;
 }
 
+@media (min-width: 640px) {
+  .placeholder {
+    height: 70px;
+  }
+}
+
 @media (min-width: 1100px) {
   .placeholder {
     height: 130px;

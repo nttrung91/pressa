@@ -7,6 +7,10 @@
 .placeholder{
   height: $marginTop;
 
+  @include bp(teen-bear){
+    height: 70px;
+  }
+
   @include bp(papa-bear){
     height: 130px;
   }
