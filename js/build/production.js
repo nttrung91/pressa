@@ -45,29 +45,25 @@
     /* Check if already speak */
      $checkIfSpeak = false,
 
-     timeout = function(){
-                 setTimeout(function(){
-                 makeSound("Press on a word");
-               },10000);
-              }
+     timeOut;
 
 
 
 /* Add keywords to result field when press on verb or noun button */
 $verbBtn.click(function() {
-  clearTimeout(timeout);
+  clearTimeout(timeOut);
   addKeywordToResult($(this));
   delayMessage();
 });
 
 $nounBtn.click(function() {
-  clearTimeout(timeout);
+  clearTimeout(timeOut);
   addKeywordToResult($(this));
   delayMessage();
 });
 
 $pronounBtn.click(function() {
-  clearTimeout(timeout);
+  clearTimeout(timeOut);
   addKeywordToResult($(this));
   delayMessage();
 });
@@ -187,8 +183,9 @@ function addKeywordToResult(element, e){
 
 
 function delayMessage(){
-  clearTimeout(timeout);
-  timeout();
+  timeOut = setTimeout(function(){
+                 makeSound("Press on a word");
+               },10000);
 }
 
 
