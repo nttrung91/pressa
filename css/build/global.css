@@ -1510,6 +1510,7 @@ button {
 }
 @media (min-width: 1100px) {
   .btnSkin1 {
+    transition: background 70ms linear;
     font-size: 22px;
     padding: 35px 0;
     height: 300px;
@@ -2082,6 +2083,7 @@ html, body {
 }
 @media (min-width: 1100px) {
   .btnPronoun {
+    transition: background 70ms linear;
     padding: 43px 0;
     font-size: 23px;
   }
@@ -2149,6 +2151,7 @@ html, body {
 }
 @media (min-width: 1100px) {
   .btnVerb {
+    transition: background 70ms linear;
     padding: 43px 0;
     font-size: 23px;
   }

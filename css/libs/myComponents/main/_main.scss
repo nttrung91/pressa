@@ -34,6 +34,7 @@
   }
 
   @include bp(papa-bear){
+    transition: background 70ms linear;
     padding: 43px 0;
     font-size: 23px;
   }
@@ -97,6 +98,7 @@
   }
 
   @include bp(papa-bear){
+    transition: background 70ms linear;
     padding: 43px 0;
     font-size: 23px;
   }
